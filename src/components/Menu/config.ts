@@ -95,6 +95,11 @@ const config: MenuEntry[] = [
       },
     ],
   },
+   {
+    label: 'Audit By Certik in progress...',
+    icon: 'AuditIcon',
+    href: '/',
+  },  
 ]
 
 export default config
