@@ -346,6 +346,22 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },  
+  {
+    pid: 21,
+    risk: 5,
+    lpSymbol: 'WLQX-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x96c3Bef501F5ddC82e0717839Dba5F4e1F75429d',
+    },
+    tokenSymbol: 'WLQX',
+    tokenAddresses: {
+      97: '',
+      56: '0x4495e673eE53c61CE79c35D5e299733639362aEc',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },      
 ]
 
 export default farms
