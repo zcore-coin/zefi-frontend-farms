@@ -132,6 +132,22 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   }, 
   {
+    pid: 22,
+    risk: 5,
+    lpSymbol: 'DAI-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x3aB77e40340AB084c3e23Be8e5A6f7afed9D41DC',
+    },
+    tokenSymbol: 'DAI',
+    tokenAddresses: {
+      97: '',
+      56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },      
+  {
     pid: 12,
     risk: 2,
     lpSymbol: 'BTCB-BNB LP',
@@ -279,6 +295,40 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 23,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'DAI',
+    lpAddresses: {
+      97: '',
+      56: '0x3ab77e40340ab084c3e23be8e5a6f7afed9d41dc', // DAI-BUSD LP
+    },
+    tokenSymbol: 'DAI',
+    tokenAddresses: {
+      97: '',
+      56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },  
+  {
+    pid: 24,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'CAKE',
+    lpAddresses: {
+      97: '',
+      56: '0x0ed8e0a2d99643e1e65cca22ed4424090b8b7458', // CAKE-BUSD LP
+    },
+    tokenSymbol: 'CAKE',
+    tokenAddresses: {
+      97: '',
+      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },    
+  {
     pid: 17,
     risk: 2,
     isTokenOnly: true,
@@ -361,7 +411,8 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-  },      
+  },    
+
 ]
 
 export default farms
